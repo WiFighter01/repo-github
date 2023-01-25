@@ -31,7 +31,7 @@ for i in range(1, 1001):
 print(my_list)
 result_1 = sum_list_1(my_list)
 print(result_1)
-result_2 = sum_list_2(my_list)
-print(result_2)
+# result_2 = sum_list_2(my_list)
+# print(result_2)
 
 print('end')
