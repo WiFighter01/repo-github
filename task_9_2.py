@@ -13,4 +13,3 @@ for i in range(n):
             a[i][j] = '*'
 for row in a:
     print(' '.join([str(elem) for elem in row]))
-
