@@ -1,11 +1,12 @@
 n, m = [int(i) for i in input().split()]
-a = [[['.'] * n for i in range(n)] for j in range(m)]
+a = [['.'] * m for j in range(n)]
 
 for i in range(n):
-    for j in range(m):
-        if i % 2 == 0:
+    if i % 2 == 0:
+        for j in range(1, m , 2):
             a[i][j] = '*'
-        else:
+    elif i % 2 != 0:
+        for j in range(0, m , 2):
             a[i][j] = '*'
 
 for row in a:
