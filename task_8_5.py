@@ -1,9 +1,7 @@
-def revers_numb(x):
-    list_numbers = []
-    while list_numbers != 0:
-        list_numbers.append(int(input()))
-    res = list_numbers.reverse()
-    return res
+def reverse():
+    a = int(input())
+    if a != 0:
+        reverse()
+    print(a)
 
-x = int(input())
-print(revers_numb(x))
+reverse()
