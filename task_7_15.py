@@ -6,4 +6,4 @@ for i in range(k):
     for j in range(l1 -1, r1):
         a[j] = '.'
 
-print(''.join([str(i) for i in a]))
+print(''.join(a))
