@@ -6,12 +6,17 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 '''
 
-def twoSum(self, nums: list[int], target: int) -> list[int]:
-    for i in range(len(nums) - 1):
-        if nums[i] + nums[i+1] == target:
-             return list(a[i], a[i+1])
 
-nums = []
-while
-target = int(input())
+def twoSum(nums, target):
+    output_list = []
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums) + 1):
+            if nums[i] + nums[j] == target:
+                output_list.append(i)
+                output_list.append(j)
+                return output_list
+
+
+nums = [3, 2, 2, 3]
+target = 6
 print(twoSum(nums, target))
